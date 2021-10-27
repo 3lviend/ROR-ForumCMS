@@ -69,7 +69,7 @@ Rails.application.configure do
     domain: 'ror-forum.herokuapp.com',
     user_name: 'elvin.alvian.siagian@gmail.com',
     password: ENV['SMTP_PASSWORD'],
-    authentication: :plain,
+    authentication: :login,
     enable_starttls_auto: true,
     openssl_verify_mode: "none"
   }
