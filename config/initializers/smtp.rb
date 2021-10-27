@@ -1,8 +1,8 @@
 ActionMailer::Base.smtp_settings = {
-  address: 'smtp.sendgrid.net',
+  address: 'smtp.gmail.com',
   port: 587,
-  domain: 'arn-forum-api.herokuapp.com',
-  user_name: 'apikey',
+  domain: 'ror-forum.herokuapp.com',
+  user_name: 'elvin.alvian.siagian@gmail.com',
   password: ENV['SENDGRID_API_KEY'],
   authentication: :plain
 }

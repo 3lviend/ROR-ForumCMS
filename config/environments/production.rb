@@ -5,11 +5,11 @@ Rails.application.configure do
 
   config.action_cable.allowed_request_origins = [
     'http://localhost:3000',
-    'https://arn-forum-cms.netlify.app'
+    'https://sb-forum.herokuapp.com/'
   ]
 
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.default_url_options = { host: "https://arn-forum-api.herokuapp.com" }
+  config.action_mailer.default_url_options = { host: "https://ror-forum.herokuapp.com" }
   
   # Code is not reloaded between requests.
   config.cache_classes = true
@@ -63,7 +63,7 @@ Rails.application.configure do
   # config.active_job.queue_adapter     = :resque
   # config.active_job.queue_name_prefix = "forum_cms_production"
 
-  config.action_mailer.default_url_options = { host: 'arn-forum-api.herokuapp.com' }
+  config.action_mailer.default_url_options = { host: 'ror-forum.herokuapp.com' }
   config.action_mailer.perform_caching = false
 
   # Ignore bad email addresses and do not raise email delivery errors.
