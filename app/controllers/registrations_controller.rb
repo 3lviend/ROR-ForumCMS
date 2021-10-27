@@ -76,7 +76,7 @@ class RegistrationsController < ApplicationController
   # Link used in account activation email
   def activate_account
     # Set url variable to the front-end url
-    url = 'https://arn-forum-cms.netlify.app/login'
+    url = 'https://sb-forum.herokuapp.com/login'
     user = User.find(params[:id])
 
     if user.activation_key == params[:activation_key]
@@ -91,7 +91,7 @@ class RegistrationsController < ApplicationController
   def password_reset_account
     # Set url variable to the front-end url
     reset_token = params[:password_reset_token]
-    url = "https://arn-forum-cms.netlify.app/reset_password?token=#{reset_token}"
+    url = "https://sb-forum.herokuapp.com/reset_password?token=#{reset_token}"
 
     redirect_to url
   end
