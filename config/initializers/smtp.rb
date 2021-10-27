@@ -4,5 +4,6 @@ ActionMailer::Base.smtp_settings = {
   domain: 'ror-forum.herokuapp.com',
   user_name: 'elvin.alvian.siagian@gmail.com',
   password: ENV['SENDGRID_API_KEY'],
-  authentication: :plain
+  authentication: :plain,
+  enable_starttls_auto: true
 }
